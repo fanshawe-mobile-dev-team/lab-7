@@ -91,12 +91,12 @@ export default function App() {
   };
 
   const handleSave = async () => {
-    if (!avatar && !caption) {
+    if (avatar === PLACEHOLDER_AVATAR && !caption) {
       Alert.alert(
         "Requirements Missing",
         "Avatar image and caption is required"
       );
-    } else if (!avatar) {
+    } else if (avatar === PLACEHOLDER_AVATAR || !avatar) {
       Alert.alert("Requirements Missing", "Avatar image is required");
     } else if (!caption) {
       Alert.alert("Requirements Missing", "Caption is required");
