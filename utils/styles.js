@@ -22,6 +22,7 @@ export default StyleSheet.create({
   caption: {
     width: "100%",
     marginBottom: 20,
+    textAlign: "center",
   },
   captionInputContainer: {
     borderWidth: 1,
